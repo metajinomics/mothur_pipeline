@@ -1,7 +1,7 @@
 # Automation for Linux (Ubuntu)
 
 ```
-git clone this_repository
+git clone https://github.com/metajinomics/mothur_pipeline.git
 bash mothur_automation_linux.sh
 ```
 
