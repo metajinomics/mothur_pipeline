@@ -33,7 +33,7 @@ paste temp.txt reverse.txt > stability.files
 ```
 Now, run pipeline
 ```
-bash ./mothur_pipeline/mothur_automation_linux.sh
+./mothur/mothur mothur_pipeline/mothur_automation_linux.sh
 ```
 
 ### Here is the detail
