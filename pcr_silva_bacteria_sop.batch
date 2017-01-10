@@ -1,0 +1,2 @@
+pcr.seqs(fasta=silva.bacteria.fasta, start=11894, end=25319, keepdots=F, processors=8)
+system(mv silva.bacteria.pcr.fasta silva.v4.fasta)
