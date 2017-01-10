@@ -1,2 +1,2 @@
 pcr.seqs(fasta=silva.seed_v123.align, start=11894, end=25319, keepdots=F)
-system(mv silva.seed_v123.pcr.fasta silva.v4.fasta)
+system(mv silva.seed_v123.pcr.align silva.v4.fasta)
