@@ -3,8 +3,8 @@
 ##Before you start
 Install mothur
 ```
-wget https://github.com/mothur/mothur/releases/download/v1.35.1/Mothur.cen_64.zip
-unzip Mothur.cen_64.zip
+wget https://github.com/mothur/mothur/releases/download/v1.38.1.1/Mothur.linux_64.zip
+unzip Mothur.linux_64.zip
 ```
 Download database
 ```
