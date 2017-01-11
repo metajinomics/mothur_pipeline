@@ -37,7 +37,7 @@ pre.cluster(fasta=current, count=current, diffs=2)
 #remove chimera
 chimera.uchime(fasta=current, count=current, dereplicate=t)
 remove.seqs(fasta=current, accnos=current)
-classify.seqs(fasta=current, count=current, reference=trainset14_032015.rdp/trainset9_032015.pds.fasta, taxonomy=trainset14_032015.rdp/trainset9_032015.pds.tax, cutoff=80)
+classify.seqs(fasta=current, count=current, reference=trainset14_032015.rdp/trainset14_032015.rdp.fasta, taxonomy=trainset14_032015.rdp/trainset14_032015.rdp.tax, cutoff=80)
 remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
 remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock)
 #this takes long
