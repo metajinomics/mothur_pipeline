@@ -14,10 +14,9 @@ wget https://www.mothur.org/w/images/6/6c/Trainset14_032015.rdp.tgz
 tar -zxvf Trainset14_032015.rdp.tgz
 ```
 
-make reference by computational PCR
+get pipeline
 ```
 git clone https://github.com/metajinomics/mothur_pipeline.git
-./mothur/mothur mothur_pipeline/pcr_silva_seed_v123.batch
 ```
 Mothur take un-compressed file. so, unzip if your files are compressed.
 ```
@@ -25,13 +24,17 @@ gunzip *.gz
 ```
 make stability file
 ```
-ls *R1.fastq | cut -f1 -d "." > groupnames.txt
-ls *R1.fastq > forward.txt
-ls *R2.fastq > reverse.txt
+ls *R1*.fastq | cut -f1 -d "." > groupnames.txt
+ls *R1*.fastq > forward.txt
+ls *R2*.fastq > reverse.txt
 paste groupnames.txt forward.txt > temp.txt
 paste temp.txt reverse.txt > stability.files
 ```
 Now, run pipeline
+```
+./mothur/mothur mothur_pipeline/stability.batch
+```
+alternatively,
 ```
 ./mothur/mothur mothur_pipeline/mothur_automation_linux.sh
 ```

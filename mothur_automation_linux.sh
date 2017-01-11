@@ -1,3 +1,8 @@
+#prepare reference
+pcr.seqs(fasta=silva.seed_v123.align, start=11894, end=25319, keepdots=F)
+#change name
+system(mv silva.seed_v123.pcr.align silva.v4.fasta)
+
 #change the name of the file from stability.files to whatever suits your study
 #read all sequence files, merge
 make.contigs(file=stability.files, processors=4)
