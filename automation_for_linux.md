@@ -13,6 +13,13 @@ wget http://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar
 tar -xvf StabilityNoMetaG.tar
 ```
 
+If you want small test data, you can download this
+```
+wget https://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip
+unzip MiSeqSOPData.zip
+cd MiSeq_SOP/
+```
+
 Download database
 ```
 wget https://www.mothur.org/w/images/1/15/Silva.seed_v123.tgz
