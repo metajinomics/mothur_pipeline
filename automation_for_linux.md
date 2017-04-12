@@ -38,7 +38,7 @@ gunzip *.gz
 ```
 make stability file
 ```
-ls *R1*.fastq | cut -f1 -d "." > groupnames.txt
+ls *R1*.fastq | cut -f1 -d "_" > groupnames.txt
 ls *R1*.fastq > forward.txt
 ls *R2*.fastq > reverse.txt
 paste groupnames.txt forward.txt > temp.txt
