@@ -7,13 +7,13 @@ wget https://github.com/mothur/mothur/releases/download/v1.39.5/Mothur.linux_64_
 unzip Mothur.linux_64_static.zip
 ```
 
-If you don't have data, here you can use sample data
+[SAMPLE DATA - BIG] If you don't have data, here you can use sample data
 ```
 wget http://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar
 tar -xvf StabilityNoMetaG.tar
 ```
 
-If you want small test data, you can download this
+[SAMPLE DATA - SMALL] If you want small test data, you can download this
 ```
 wget https://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip
 unzip MiSeqSOPData.zip
@@ -47,10 +47,6 @@ paste temp.txt reverse.txt > stability.files
 Now, run pipeline
 ```
 ./mothur/mothur mothur_pipeline/stability.batch
-```
-alternatively,
-```
-./mothur/mothur mothur_pipeline/mothur_automation_linux.sh
 ```
 
 ### Here is the detail
