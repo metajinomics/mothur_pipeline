@@ -4,7 +4,7 @@ screen.seqs(fasta=merged.fasta, group=mergegroups, maxambig=0, maxlength=515,pro
 unique.seqs()
 count.seqs(name=current, group=current)
 align.seqs(fasta=current, reference=silva.v123.fasta)
-screen.seqs(fasta=current, count=current, start=1045, end=13124, maxhomop=12)
+screen.seqs(fasta=current, count=current, start=6387, end=14987, maxhomop=12)
 filter.seqs(fasta=current, vertical=T, trump=.)
 unique.seqs(fasta=current, count=current)
 pre.cluster(fasta=current, count=current, diffs=2)
