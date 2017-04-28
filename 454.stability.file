@@ -1,13 +1,10 @@
-pcr.seqs(fasta=silva.seed_v123.align, start=11894, end=25319, keepdots=F)
-system(mv silva.seed_v123.pcr.align silva.v4.fasta)
-
-#change the name of the file from stability.files to whatever suits your study
-screen.seqs(fasta=merged.fasta, group=mergegroups, maxambig=0, maxlength=275, processors=8)
+pcr.seqs(fasta=silva.seed_v123.align, start=1, end=15000, keepdots=F)
+system(mv silva.seed_v123.pcr.align silva.v123.fasta)
+screen.seqs(fasta=merged.fasta, group=mergegroups, maxambig=0, maxlength=515,rocessors=20)
 unique.seqs()
 count.seqs(name=current, group=current)
-align.seqs(fasta=current, reference=silva.v4.fasta)
-summary.seqs(fasta=current, count=current)
-screen.seqs(fasta=current, count=current, summary=current, start=1968, end=11550, maxhomop=8)
+align.seqs(fasta=current, reference=silva.v123.fasta)
+screen.seqs(fasta=current, count=current, start=1045, end=13124, maxhomop=12)
 filter.seqs(fasta=current, vertical=T, trump=.)
 unique.seqs(fasta=current, count=current)
 pre.cluster(fasta=current, count=current, diffs=2)
