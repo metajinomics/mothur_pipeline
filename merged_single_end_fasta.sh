@@ -1,5 +1,5 @@
 #change - in filename into _
-for x in *-*;do mv $x ${x%-*}_${x##*-};don
+for x in *-*;do mv $x ${x%-*}_${x##*-};done
 
 
 #this command make accnos file 
