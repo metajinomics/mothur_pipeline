@@ -34,7 +34,7 @@ align.seqs(fasta=merged.unique.fasta, reference=erm.fa.aln.fa)
 
 
 summary.seqs(fasta=merged.unique.align, count=merged.count_table)
-screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.rc.summary, start=133, end=425, maxhomop=8)
+screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.summary, start=133, end=425, maxhomop=8)
 summary.seqs(fasta=current, count=current)
 filter.seqs(fasta=merged.unique.good.align, vertical=T, trump=.)
 
@@ -71,7 +71,7 @@ align.seqs(fasta=merged.unique.fasta, reference=silva.v4.fasta)
 
 
 summary.seqs(fasta=merged.unique.align, count=merged.count_table)
-screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.rc.summary, start=1, end=13424, maxhomop=8)
+screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.summary, start=1, end=13424, maxhomop=8)
 summary.seqs(fasta=current, count=current)
 filter.seqs(fasta=merged.unique.good.align, vertical=T, trump=.)
 
