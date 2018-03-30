@@ -39,7 +39,7 @@ summary.seqs(fasta=current, count=current)
 filter.seqs(fasta=merged.unique.good.align, vertical=T, trump=.)
 
 unique.seqs(fasta=merged.unique.good.filter.fasta, count=merged.good.count_table)
-pre.cluster(fasta=merged.unique.good.filter.unique.fasta, count=merged.unique.rc.good.filter.count_table, diffs=2)
+pre.cluster(fasta=merged.unique.good.filter.unique.fasta, count=merged.unique.good.filter.count_table, diffs=2)
 
 chimera.vsearch(fasta=merged.unique.good.filter.unique.precluster.fasta, count=merged.unique.good.filter.unique.precluster.count_table, dereplicate=t)
 remove.seqs(fasta=merged.unique.good.filter.unique.precluster.fasta, accnos=merged.unique.good.filter.unique.precluster.denovo.vsearch.accnos)
