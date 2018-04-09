@@ -1,7 +1,7 @@
 
 
 summary.seqs(fasta=merged.unique.align, count=merged.count_table)
-screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.summary, maxhomop=8)
+screen.seqs(fasta=merged.unique.align, count=merged.count_table, summary=merged.unique.summary, minlength=100, maxhomop=8)
 summary.seqs(fasta=current, count=current)
 filter.seqs(fasta=merged.unique.good.align, vertical=T, trump=.)
 
