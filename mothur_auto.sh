@@ -26,5 +26,5 @@ python /mnt/home/choiji22/git/mothur_pipeline/get_merge_file_command.py list.pic
 #from here, run on mothur environment
 # if functional gene
 ../mothur/mothur ../mothur_pipeline/step1.batch
-../mothur/mothur "align.seqs(fasta=merged.unique.fasta, reference=/mnt/home/choiji22/dev/darteqm/$gen.fa)"
+../mothur/mothur "#align.seqs(fasta=merged.unique.fasta, reference=/mnt/home/choiji22/dev/darteqm/$gen.fa)"
 ../mothur/mothur ../mothur_pipeline/step2.batch
