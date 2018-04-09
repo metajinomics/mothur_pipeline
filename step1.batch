@@ -1,0 +1,5 @@
+summary.seqs(fasta=merged.fasta)
+unique.seqs(fasta=merged.fasta)
+
+count.seqs(name=merged.names, group=mergegroups)
+summary.seqs(count=merged.count_table)
