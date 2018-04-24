@@ -19,8 +19,8 @@ mv silva.seed_v132.pcr.align silva.v4.fasta
 
 RDP trainset version 16
 ```
-wget https://www.mothur.org/w/images/d/dc/Trainset16_022016.rdp.tgz
-tar -zxvf Trainset16_022016.rdp.tgz
+wget https://www.mothur.org/w/images/c/c3/Trainset16_022016.pds.tgz
+tar -zxvf Trainset16_022016.pds.tgz
 ```
 
 #### Figure out numbers
@@ -43,5 +43,11 @@ now, test run to figure out numbers
 
 #### Finally run mothur
 ```
-/mnt/research/germs/softwares/mothur_pipeline/mothur_pipeline_v1.40.2.batch
+./mothur/mothur /mnt/research/germs/softwares/mothur_pipeline/mothur_pipeline_v1.40.2.batch
+```
+
+#### your result file will be
+```
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.opti_mcc.shared
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.opti_mcc.0.03.cons.taxonomy
 ```
