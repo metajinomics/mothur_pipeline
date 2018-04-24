@@ -28,7 +28,11 @@ make temporary directory
 ```
 mkdir test
 ```
-then copy one sample of file and alignment file
+then copy one sample of file. For example
+```
+cp A066MaCpR2_S368_L001_R* test
+```
+and alignment file
 ```
 cp silva.v4.fasta test
 ```
