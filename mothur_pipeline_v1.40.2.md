@@ -43,7 +43,7 @@ now, test run to figure out numbers
 ./mothur/mothur "#align.seqs(inputdir=test, fasta=stability.trim.contigs.fasta, reference=silva.v4.fasta)"
 ./mothur/mothur "#summary.seqs(inputdir=test, fasta=test/stability.trim.contigs.align)"
 ```
-
+Make sure if most of sequences are aligned Start = 1968 and end = 11550, if not, you need to change number in the batch file
 
 #### Finally run mothur
 ```
